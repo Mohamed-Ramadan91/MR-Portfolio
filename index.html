@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MR-Portfolio</title>
+    <!--=============== FavIcon ===============-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!--=============== Font Awesome ===============-->
+    <link rel="stylesheet" href="Libs/Font Awesome/css/all.min.css" />
+    <!--=============== Swiper JS ===============-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!--=============== typewriter JS ===============-->
+<script src="Libs/typewriterjs-master/dist/core.js"></script>
+<!--=============== Way Points JS ===============-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+<!--=============== Main CSS File ===============-->
+<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <aside class="active">
+      <div class="my-image">
+        <img src="images/me.webp" alt="My-picture" />
+      </div>
+      <div class="logo">
+        <img src="images/dark-logo.png" alt="My-Logo" />
+      </div>
+      <div class="icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <nav>
+        <ul>
+          <li data-target="home" class="active">
+            <i class="fas fa-home"></i><a href="#landing-page">Home</a>
+          </li>
+          <li data-target="about">
+            <i class="fas fa-user-edit"></i>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li data-target="services">
+            <i class="fas fa-server"></i><a href="#services">Services</a>
+          </li>
+          <li data-target="skills">
+            <i class="fa-regular fa-rectangle-list"></i><a href="#skills">Skills</a>
+          </li>
+          <li data-target="resume">
+            <i class="fas fa-address-card"></i><a href="#resume">Resume</a>
+          </li>
+          <li data-target="portfolio">
+            <i class="fas fa-book"></i><a href="#portfolio">Portfolio</a>
+          </li>
+          <li data-target="testimonial">
+            <i class="fas fa-users"></i><a href="#testimonial">Testimonial</a>
+          </li>
+          <li data-target="contact">
+            <i class="fas fa-envelope"></i><a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <!--======================== Landing-Page ========================-->
+      <section class="landing-page" data-target="home" id="landing-page">
+        <div class="nav-bar-icon active">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="txt">
+          <h3>Welcome</h3>
+          <h2 id="app"></h2>
+          <a href="#">Call Me</a>
+        </div>
+        <a href="#about-me" id="scroll-down"
+          ><i class="fas fa-angle-double-down fa-lg"></i
+        ></a>
+      </section>
+      <!--======================== About-Me ========================-->
+      <section class="about-me" id="about-me" data-target="about">
+        <div class="special-title">
+          <div class="back-title"><h2>ABOUT ME</h2></div>
+          <div class="front-title"><h3>Know Me More</h3></div>
+          <div class="line"><span class="dot"></span></div>
+        </div>
+        <div class="container">
+          <div class="about-me-txt">
+            <h3>
+              Hello, I'm <span>Mohamed Ahmed Ramadan</span>, a Web Developer
+            </h3>
+            <p>
+              I'm a frontend developer who specializes in creating beautiful and
+              user-friendly websites using HTML, CSS, Sass, Bootstrap, and
+              JavaScript. With a keen eye for detail and a love for solving
+              complex problems, I take pride in delivering high-quality work
+              that exceeds client expectations.
+            </p>
+            <p>
+              I am constantly learning and exploring new technologies to improve
+              my skills and stay up-to-date with the latest trends in the
+              industry.
+            </p>
+            <p>
+              I believe that a great user experience is the key to a successful
+              website, and I strive to achieve this with every project I
+              undertake. When I'm not coding, you can find me hiking, reading,
+              or experimenting with new recipes in the kitchen 😀.
+            </p>
+            <p>
+              If you're interested in collaborating or have a project you'd like
+              to discuss, feel free to get in touch with me.
+            </p>
+          </div>
+          <div class="about-me-info">
+            <p><span>Name:</span> Mohamed Ahmed Ramadan</p>
+            <hr />
+            <p>
+              <span>Email:</span
+              ><a class="mail" href="mailto:mohamed.a.ramadan0091@gmail.com"></a>
+                mohamed.a.ramadan0091@gmail.com</a
+              >
+            </p>
+            <hr />
+            <p><span>From:</span> Cairo, Egypt</p>
+            <hr />
+            <a class="cv" href="dowmload files/cv.pdf" download>Download CV</a>
+          </div>
+        </div>
+        <div class="zfacts" id="zfacts">
+          <div class="container">
+          <div class="facts">
+            <div class="fact">
+              <i class="fa-solid fa-diagram-project"></i>
+              <p class="counter" data-target="30">0</p>
+              <h3>Complete Projects</h3>
+            </div>
+            <div class="fact">
+              <i class="fa-solid fa-face-smile"></i>
+              <p class="counter" data-target="30">0</p>
+              <h3>Happy Clients</h3>
+            </div>
+            <div class="fact">
+              <i class="fa-solid fa-clock"></i>
+              <p class="counter" data-target="650">0</p>
+              <h3>Hours Of Experience</h3>
+            </div>
+            
+          </div></div>
+        </div>
+      </section>
+      <!--======================== Services ========================-->
+      <section class="services" id="services" data-target="services">
+        <div class="special-title">
+          <div class="back-title"><h2>Services</h2></div>
+          <div class="front-title"><h3>What I Do ?</h3></div>
+          <div class="line"><span class="dot"></span></div>
+        </div>
+        <div class="container">
+          <div class="all-cards">
+            <div class="two-cards">
+              <div class="card">
+                <div class="icon"><i class="fa-solid fa-palette"></i></div>
+                <div class="txt">
+                  <h3>Web Design</h3>
+                  <p>
+                    create visually appealing layouts and interfaces for your  websites, 
+                    designing user interfaces, creating wireframes, and using graphic design tools to create custom icons and images.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon"><i class="fa-solid fa-pencil"></i></div>
+                <div class="txt">
+                  <h3>Web development</h3>
+                  <p>
+                    Turn your designs into functional websites using HTML, CSS, and JavaScript. This includes creating responsive designs that work well on different devices and platforms.</p>
+                </div>
+              </div>
+            </div>
+            <div class="two-cards">
+              <div class="card">
+                <div class="icon"><i class="fas fa-pencil-ruler"></i></div>
+                <div class="txt">
+                  <h3>User experience (UX) design</h3>
+                  <p>
+                    creating interfaces and experiences that are intuitive, user-friendly, and enjoyable for website visitors,
+                    By focusing on usability, accessibility, and user-centered design, I can help You in create websites that Your users will love.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="txt">
+                  <h3>Responsive design</h3>
+                  <p>
+                    With more and more people accessing the web on their mobile devices, responsive design is very important. I will design and develop websites that look great and function smoothly on different screen sizes and devices.</p>
+                </div>
+              </div>
+            </div>
+            <div class="two-cards">
+              <div class="card">
+                <div class="icon"><i class="fa-solid fa-gears"></i></div>
+                <div class="txt">
+                  <h3>Frontend optimization</h3>
+                  <p>
+                    optimize Your front-end code to improve the website speed and performance.<br> This includes optimizing images, reducing code bloat, and leveraging caching and other optimization techniques.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon"><i class="fa-solid fa-list-check"></i></div>
+                <div class="txt">
+                  <h3>Search engine optimization (SEO)</h3>
+                  <p>
+                    Search engine optimization involves optimizing website content and structure to improve its visibility in search engine results pages (SERPs). <br>
+                    Seo is very important to improve Your website ranking in search engines and drive more traffic to Your website.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--======================== Skills ========================-->
+      <section class="skills" id="skills" data-target="skills">
+        <div class="special-title">
+          <div class="back-title"><h2>SKills</h2></div>
+          <div class="front-title"><h3>What I Learn ?</h3></div>
+          <div class="line"><span class="dot"></span></div>
+        </div>
+        <div class="container">
+          <div class="two-prog">
+            <div class="prog">
+              <div class="txt">
+                <p>Web Design</p>
+                <p>70%</p>
+              </div>
+              <div class="progbar"><span data-width="70%"></span></div>
+            </div>
+            <div class="prog">
+              <div class="txt">
+                <p>HTML</p>
+                <p>95%</p>
+              </div>
+              <div class="progbar"><span data-width="95%"></span></div>
+            </div>
+          </div>
+          <div class="two-prog">
+            <div class="prog">
+              <div class="txt">
+                <p>CSS</p>
+                <p>85%</p>
+              </div>
+              <div class="progbar"><span data-width="85%"></span></div>
+            </div>
+            <div class="prog">
+              <div class="txt">
+                <p>JavaScript</p>
+                <p>75%</p>
+              </div>
+              <div class="progbar"><span data-width="75%"></span></div>
+            </div>
+          </div>
+          <div class="two-prog">
+            <div class="prog">
+              <div class="txt">
+                <p>Sass</p>
+                <p>70%</p>
+              </div>
+              <div class="progbar"><span data-width="70%"></span></div>
+            </div>
+            <div class="prog">
+              <div class="txt">
+                <p>Bootstrap</p>
+                <p>85%</p>
+              </div>
+              <div class="progbar"><span data-width="85%"></span></div>
+            </div>
+          </div>
+          <div class="two-prog">
+            <div class="prog">
+              <div class="txt">
+                <p>Git</p>
+                <p>75%</p>
+              </div>
+              <div class="progbar"><span data-width="75%"></span></div>
+            </div>
+            <div class="prog">
+              <div class="txt">
+                <p>Git Hub</p>
+                <p>85%</p>
+              </div>
+              <div class="progbar"><span data-width="85%"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--======================== Resume ========================-->
+      <section class="resume" id="resume" data-target="resume">
+        <div class="special-title">
+          <div class="back-title"><h2>Resume</h2></div>
+          <div class="front-title"><h3>My Journey</h3></div>
+          <div class="line"><span class="dot"></span></div>
+        </div>
+        <div class="container">
+          <div class="sumary">
+            <h3>Sumary</h3>
+            <div class="txt">
+              <h4>Mohamed Ahmed Ramadan</h4>
+              <p>Front-end Developer With +1 Year of experiance in designing and developing Websites</p>
+              <p class="doted">Cairo, Egypt</p>
+              <p class="doted">(+2)01097471619</p>
+              <p class="doted">mohamed.a.ramadan0091@gmail.com</p>
+            </div>
+          </div>
+          <div class="education">
+            <h3>Education</h3>
+            <div class="txt">
+              <p class="date">(2008 - 2013)</p>
+              <h4>Bachelor Of Electrical Engineering</h4>
+              <p class="date">(2014 - 2019)</p>
+              <h4>Work as Electrical Engineer in a big factory</h4>
+              <p class="date">(2020 - 2022)</p>
+              <h4>Follow My Passion and start learning Computer Science</h4>
+              <h4>Study CS50 From Harvered University (online course)</h4>
+              <h4>Study HTML & CSS (online course on udemy)</h4>
+              <h4>Create some HTML & CSS Templates For Practice.</h4>
+              <h4>Study Java Script (online course on udemy)</h4>
+              <h4>Study SASS & Bootstrap (online course)</h4>
+              <h4>Create some HTML & CSS & JS Templates For Practice.</h4>
+            </div>
+          </div>
+          <div class="education">
+            <h3>Professional Experience</h3>
+            <div class="txt">
+              <p class="date">(2022 - 2023)</p>
+              <h4>Make A Resposive Landing Pages For Friends</h4>
+              <h4>Start To Work As Front-end Free Lancer</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--======================== Portfolio ========================-->
+      <section class="portfolio" id="portfolio" data-target="portfolio">
+        <div class="special-title">
+          <div class="back-title"><h2>Portfolio</h2></div>
+          <div class="front-title"><h3>My Work</h3></div>
+          <div class="line"><span class="dot"></span></div>
+        </div>
+        <div class="container">
+          <div class="cards">
+            <div class="card">
+              <div class="img">
+                <img src="images/mr-chef.png" alt="first-project">
+              </div>
+              <div class="txt">
+                <a href="https://github.com/Mohamed-Ramadan91/MR.Chef" target="_blank" title="Git hub Code"><i class="fa-solid fa-code"></i></a>
+                <h3>Mr-Chef</h3>
+                <a href="https://mohamed-ramadan91.github.io/MR.Chef/" target="_blank" title="Live Demo"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img">
+                <img src="images/kasper.png" alt="Kasper-template-project">
+              </div>
+              <div class="txt">
+                <a href="https://github.com/Mohamed-Ramadan91/Kasper" target="_blank" title="Git hub Code"><i class="fa-solid fa-code"></i></a>
+                <h3>Kasper Template</h3>
+                <a href="https://mohamed-ramadan91.github.io/Kasper/" target="_blank" title="Live Demo"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img">
+                <img src="images/leon.png" alt="leon-template-project">
+              </div>
+              <div class="txt">
+                <a href="https://github.com/Mohamed-Ramadan91/Leon" target="_blank" title="Git hub Code"><i class="fa-solid fa-code"></i></a>
+                <h3>Leon Template</h3>
+                <a href="https://mohamed-ramadan91.github.io/Leon/" target="_blank" title="Live Demo"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="more">
+            <a href="#" target="_blank">See More</a>
+          </div>
+        </div>
+      </section>
+      <!--======================== Testimonial ========================-->
+      <section class="testimonial" id="testimonial" data-target="testimonial">
+        <div class="special-title">
+          <div class="back-title"><h2>Testimonial</h2></div>
+          <div class="front-title"><h3>Clients Review</h3></div>
+          <div class="line"><span class="dot"></span></div>
+        </div>
+        <div class="container">
+          <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card">
+          <div class="txt">
+            <p>
+              <i class="fa-solid fa-quote-left"></i>
+              Working with Mohamed on the frontend development of our website was a fantastic experience. he was highly skilled, communicative, and delivered exceptional results.
+              <i class="fa-solid fa-quote-right"></i>
+            </p>
+          </div>
+          <div class="image">
+            <img src="images/testimonials-9.jpg" alt="user-img">
+          </div>
+          <div class="title">
+            <h3>Abigail Powell</h3>
+            <p>Free Lancer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <div class="txt">
+            <p>
+              <i class="fa-solid fa-quote-left"></i>
+              I would highly recommend Mohamed for their frontend development expertise. They consistently delivered high-quality work and went above and beyond to ensure the project's success.
+              <i class="fa-solid fa-quote-right"></i>
+            </p>
+          </div>
+          <div class="image">
+            <img src="images/testimonials-1.jpg" alt="user-img">
+          </div>
+          <div class="title">
+            <h3>Keith J. Aviles</h3>
+            <p>Writer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <div class="txt">
+            <p>
+              <i class="fa-solid fa-quote-left"></i>
+              Mohamed is a highly skilled frontend developer who consistently exceeded our expectations. Their attention to detail and commitment to delivering exceptional work was impressive.
+              <i class="fa-solid fa-quote-right"></i>
+            </p>
+          </div>
+          <div class="image">
+            <img src="images/testimonials-3.jpg" alt="user-img">
+          </div>
+          <div class="title">
+            <h3>Lillian Mason</h3>
+            <p>Photographer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <div class="txt">
+            <p>
+              <i class="fa-solid fa-quote-left"></i>
+              Mohamed is a talented web developer who consistently delivers high-quality websites using HTML, CSS and JS. Their responsive designs are second to none.
+              <i class="fa-solid fa-quote-right"></i>
+            </p>
+          </div>
+          <div class="image">
+            <img src="images/testimonials-4.jpg" alt="user-img">
+          </div>
+          <div class="title">
+            <h3>Kim Douglas</h3>
+            <p>Customs officer</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <div class="txt">
+            <p>
+              <i class="fa-solid fa-quote-left"></i>
+              Working with Mohamed on our website was a fantastic experience. he was able to take our vision and turn it into a beautiful, responsive website using Bootstrap and JS.
+              <i class="fa-solid fa-quote-right"></i>
+            </p>
+          </div>
+          <div class="image">
+            <img src="images/testimonials-5.jpg" alt="user-img">
+          </div>
+          <div class="title">
+            <h3>Oscar Barnett</h3>
+            <p>High School Teacher</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+          
+        </div>
+      </section>
+  <!--======================== Contact ========================-->
+  <section class="contact" id="contact" data-target="contact">
+    <div class="special-title">
+      <div class="back-title"><h2>CONTACT US</h2></div>
+      <div class="front-title"><h3>Get In Touch</h3></div>
+      <div class="line"><span class="dot"></span></div>
+    </div>
+  
+  <div class="container">
+    <div class="cards">
+      <div class="card-info">
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="txt">
+            <h4>Location</h4>
+            <p>Cairo, Egypt</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="txt">
+            <h4>Email</h4>
+            <p><a class="mail" href="mailto:mohamed.a.ramadan0091@gmail.com">
+              mohamed.a.ramadan0091@gmail.com
+          </a></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="txt">
+            <h4>WhatsApp</h4>
+            <p>(+2)01097471619</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <div class="enter-name">
+            <input type="text" name="name" id="name" placeholder="Enter Your Name*" required>
+          </div>
+          <div class="enter-email">
+            <input type="email" name="email" id="email" placeholder="Enter Your Email*" required>
+          </div>
+          <div class="enter-msg">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message*" required></textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Send Message">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>CopyRight &copy; 2023 <span>Mohamed</span> All Rights Reserved.</p>
+</footer>
+</main>
+    <!-- JS Libraries -->
+    
+    
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
