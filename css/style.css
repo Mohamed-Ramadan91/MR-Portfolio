@@ -726,6 +726,16 @@ main .landing-page {
 .resume .container .education {
   margin-bottom: 20px;
 }
+@media (max-width: 450px) {
+  .resume .container .doted {
+    font-size: 13px;
+  }
+}
+@media (max-width: 300px) {
+  .resume .container .doted {
+    font-size: 10px;
+  }
+}
 /*========================= Portfolio =========================*/
 
 .portfolio .container {
