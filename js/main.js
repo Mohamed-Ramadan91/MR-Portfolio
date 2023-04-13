@@ -51,30 +51,23 @@ var swiper = new Swiper(".mySwiper", {
 //-------------- 3- WayPoints --------------//
 
 //Functions
-window.onscroll = function () {
-  if (window.scrollY > home.topOffset && window.scrollY < 200) {
-    removeActiveFromNavBarSections();
-    home.classList.add("active");
-  } else {
-    sections.forEach((sec) => {
-      const way1 = new Waypoint({
-        element: sec,
-        handler: function () {
-          navBarSections.forEach((navSec) => {
-            if (
-              sec.getAttribute("data-target") ===
-              navSec.getAttribute("data-target")
-            ) {
-              removeActiveFromNavBarSections();
-              navSec.classList.add("active");
-            }
-          });
-        },
-        offset: 400,
+sections.forEach((sec) => {
+  const way1 = new Waypoint({
+    element: sec,
+    handler: function () {
+      navBarSections.forEach((navSec) => {
+        if (
+          sec.getAttribute("data-target") === navSec.getAttribute("data-target")
+        ) {
+          removeActiveFromNavBarSections();
+          navSec.classList.add("active");
+        }
       });
-    });
-  }
-};
+    },
+    offset: 400,
+  });
+});
+
 //----
 const way2 = new Waypoint({
   element: skills,
