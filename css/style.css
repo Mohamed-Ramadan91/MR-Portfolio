@@ -4,10 +4,10 @@
   margin: 0;
   padding: 0;
 }
-*::selection {
+/* *::selection {
   background-color: var(--alternative-color);
   color: var(--main-color);
-}
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -153,7 +153,7 @@ a {
 
 /*========================= Aside =========================*/
 aside {
-  user-select: none;
+  /* user-select: none; */
   position: fixed;
   left: -100%;
   transition: all 1s;
@@ -186,7 +186,7 @@ aside.active {
 ::-webkit-scrollbar-thumb {
   background-color: var(--second-color);
 }
-aside .my-image {
+aside .my-image img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -278,7 +278,7 @@ main {
 }
 /*========================= Landing Page =========================*/
 main .landing-page {
-  user-select: none;
+  /* user-select: none; */
   height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -307,7 +307,7 @@ main .landing-page {
   color: var(--third-color);
 }
 .landing-page .txt {
-  user-select: none;
+  /* user-select: none; */
   text-align: center;
   color: #fff;
   display: flex;
@@ -327,7 +327,7 @@ main .landing-page {
 .landing-page .txt a {
   font-size: 25px;
   font-weight: 400;
-  padding: 20px;
+  padding: 10px 15px;
   color: #fff;
   border: 1px solid var(--second-color);
   transition: all 0.7s;

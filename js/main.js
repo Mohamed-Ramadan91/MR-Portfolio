@@ -30,7 +30,7 @@ typewriter
   .typeString("I'm Front-End Developer")
   .pauseFor(2500)
   .deleteAll()
-  .typeString("I'm Free Lancer")
+  .typeString("I'm Freelancer")
   .pauseFor(2500)
   .deleteChars(2)
   .start();
@@ -75,7 +75,7 @@ sections.forEach((sec) => {
         }
       });
     },
-    offset: 400,
+    offset: 0,
   });
 });
 
@@ -100,7 +100,6 @@ const way3 = new Waypoint({
   offset: 300,
 });
 //---
-//----
 const way4 = new Waypoint({
   element: increamentBar,
   handler: function () {
@@ -125,26 +124,12 @@ const way4 = new Waypoint({
   },
   offset: 400,
 });
-//----------
-// const way5 = new Waypoint({
-//   element: increamentBar,
-//   handler: function () {
-//     counters.forEach((counter) => {
-//       counter.innerText = "0";
-//     });
-//   },
-//   offset: 300,
-// });
 //---
 function removeActiveFromNavBarSections() {
   navBarSections.forEach((sec) => {
     sec.classList.remove("active");
   });
 }
-
-//----------------------
-
-//----------------------
 
 //========================== Main JS ==========================//
 //-------------- 1- NAV-BAR --------------//
@@ -184,33 +169,3 @@ function myFunction(x) {
 var x = window.matchMedia("(max-width: 991px)");
 myFunction(x); // Call listener function at run time
 x.addListener(myFunction); // Attach listener function on state changes
-
-//-------------- 2- Add Active to Scrolled Section --------------//
-
-//------------------
-
-//---------------
-/*
-const counters = document.querySelectorAll(".counter");
-console.log(counters);
-
-counters.forEach((counter) => {
-  counter.innerText = "0";
-
-  const updateCounter = () => {
-    const target = +counter.getAttribute("data-target");
-    const c = +counter.innerText;
-
-    const increment = target / 600;
-
-    if (c < target) {
-      counter.innerText = `${Math.ceil(c + increment)}`;
-      setTimeout(updateCounter, 1);
-    } else {
-      counter.innerText = target;
-    }
-  };
-
-  updateCounter();
-});
-*/
