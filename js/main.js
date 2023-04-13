@@ -9,6 +9,7 @@ const navBarSections = document.querySelectorAll("aside nav ul li");
 const aboutMeSection = document.querySelector(".about-me");
 const sections = document.querySelectorAll("section");
 const home = document.querySelector("#landing-page");
+const homeLi = document.querySelector("#home-li");
 const skills = document.querySelector("#skills");
 const progbar = document.querySelectorAll(".progbar");
 const progbarSpan = document.querySelectorAll(".progbar span");
@@ -51,6 +52,16 @@ var swiper = new Swiper(".mySwiper", {
 //-------------- 3- WayPoints --------------//
 
 //Functions
+//---
+const way0 = new Waypoint({
+  element: homeLi,
+  handler: function () {
+    removeActiveFromNavBarSections();
+    homeLi.classList.add("active");
+  },
+  offset: 0,
+});
+//---
 sections.forEach((sec) => {
   const way1 = new Waypoint({
     element: sec,
